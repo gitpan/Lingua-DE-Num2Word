@@ -13,8 +13,8 @@ use strict;
 BEGIN {
   use Exporter ();
   use vars qw($VERSION $REVISION @ISA @EXPORT_OK);
-  $VERSION    = '0.02';
-  ($REVISION) = '$Revision: 1.8 $' =~ /([\d.]+)/;
+  $VERSION    = '0.03';
+  ($REVISION) = '$Revision: 1.10 $' =~ /([\d.]+)/;
   @ISA        = qw(Exporter);
   @EXPORT_OK  = qw(&num2de_cardinal);
 }
@@ -24,7 +24,6 @@ BEGIN {
 #
 sub num2de_cardinal {
   my $positive = shift;
-  my $out;
 
   my @tokens1 = qw(null ein zwei drei vier fünf sechs sieben acht neun zehn elf zwölf);
   my @tokens2 = qw(zwanzig dreissig vierzig fünfzig sechzig siebzig achtzig neunzig hundert);
@@ -123,7 +122,7 @@ Roman Vasicek E<lt>rv@petamem.comE<gt>
 
 =head1 COPYRIGHT
 
-Copyright (c) 2002-2004 PetaMem s.r.o.
+Copyright (c) 2002-2004 PetaMem s.r.o. - L<http://www.petamem.com/>
 
 This package is free software. Tou can redistribute and/or modify it under
 the same terms as Perl itself.
